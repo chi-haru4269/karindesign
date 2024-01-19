@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+
+
+.header_inner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 2.51%;
+    padding-right: 6.73%;
+    position: absolute;
+    z-index:9999;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width:227px;
+}
+.header_nav ul{
+    display: flex;
+    gap: 50px;
+
+}
+.header_nav li{
+    color:#fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 1020px;
+    padding: 0 10px;
+    margin: 0 auto
+}
+.title{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+}
+.first{
+    font-size: 30px;
+    line-height: 3.88;
+    letter-spacing: 0em;
+    margin-top: 105px;
+}
+
+.second{
+    font-size: 82px;
+    line-height: 1.17;
+    letter-spacing: 0.1em;
+    margin-top: 60px;
+}
+
+.third{
+    font-size: 23px;
+    line-height: 1.65;
+    letter-spacing: 0.1em;
+    margin-top: 50px;
+}
+
+.ABOUTUS{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 102px;
+
+}
+
+#aboutUs aboutphoto{
+    width: 500px;
+    height: 566px;
+    border-bottom-right-radius: 82px;
+}
+.text{
+    margin-left: 80px;
+}
+
+.section-title1{
+    width:272px;
+    margin-top: 68px;
+
+}
+.text-title{
+    font-size: 44px;
+    line-height: 1.38;
+    letter-spacing: 0em;
+    margin-top: 57px;
+    margin-bottom: 40px;
+
+}
+.text-title p{
+    font-size: 16px; 
+    line-height: 3.81;
+    letter-spacing: 0em;
+}
+
+
+#menu section-title2{
+    width: 151px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 108px;
+   
+}
+
+#menu ul img{
+    width: 300px;
+    height: 200px;
+    border-top-right-radius: 41px;
+}
+#menu ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.text-title2{
+    margin-top: -7px;
+    margin-left: 13px;
+}
