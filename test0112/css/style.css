@@ -29,10 +29,17 @@
     font-weight: bold;
 }
 
+main{
+    background-color: #E8D9BF;
+}
 .container{
     max-width: 1020px;
     padding: 0 10px;
     margin: 0 auto
+    
+
+  
+    
 }
 .title{
     display: flex;
@@ -63,27 +70,31 @@
 
 .ABOUTUS{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin-top: 102px;
 
 }
 
-#aboutUs aboutphoto{
-    width: 500px;
-    height: 566px;
+.aboutphoto{
+    width: 50%;
+    
+}
+.aboutphoto img{
     border-bottom-right-radius: 82px;
 }
 .text{
     margin-left: 80px;
+    width: 50%;
 }
 
 .section-title1{
-    width:272px;
-    margin-top: 68px;
+    width: 272px;
+    height: 77px;
+    
 
 }
-.text-title{
+.text-title1{
     font-size: 44px;
     line-height: 1.38;
     letter-spacing: 0em;
@@ -91,35 +102,170 @@
     margin-bottom: 40px;
 
 }
-.text-title p{
+#aboutUs p{
     font-size: 16px; 
-    line-height: 3.81;
+    line-height: 1.62;
     letter-spacing: 0em;
 }
 
-
-#menu section-title2{
-    width: 151px;
+.MENU{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.section-title2{
+    width: 151px;
+    height: 77px;
     margin-top: 108px;
+   
    
 }
 
 #menu ul img{
-    width: 300px;
-    height: 200px;
     border-top-right-radius: 41px;
 }
 #menu ul{
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    margin-top: 49px;
 
+}
+
+#menu ul li{
+    width: 33.3%;
 }
 
 .text-title2{
     margin-top: -7px;
     margin-left: 13px;
+    margin-bottom: 24px;
+    font-size: 38px;
+    line-height: 0.57;
+    color: #D30202;
+}
+
+#menu p{
+    font-size: 17px;
+    line-height: 1.47;
+}
+
+.gallery-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title3{
+
+    margin-top:100px;
+    width: 245px;
+ 
+    
+}
+
+
+#gallery ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 27px;
+    
+    
+}
+#gallery ul li{
+    width: 20%;
+}
+
+.event-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section-title4{
+    margin-top:71px;
+    width: 173px;
+ 
+   
+
+}
+
+#event ul{
+    margin-top: 40px;
+   padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 160px;
+    background-color: #fff;
+    border: solid 3px #4F260B
+ 
+}
+
+#event ul li{
+    display: flex;
+    gap: 61px;
+}
+
+.date{
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+.news{
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.access-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title5{
+    width: 213px;
+    margin-top: 81px;
+    
+}
+
+#access iframe{
+    width: 1920px;
+    height: 471px;
+    filter:grayscale(100%);
+    margin-top: 23px;
+}
+
+.footer_inner{
+    max-width: 1000px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 68px;
+    margin-top: 83px;
+}
+
+.logo2{
+    width: 226px;
+}
+
+.info p{
+    font-size: 20px;
+    line-height: 1.95;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 79px;
+    font-size: 16px;
+    line-height: 2.18;
+}
+
+.totop{
+    position: fixed;
+    width: 125px;
+    bottom: 20px;
+    right: 20px;
 }
