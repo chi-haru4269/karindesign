@@ -7,7 +7,17 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
+<script>
+    $(function(){
+        $(".sp-menu-btn").on("click",function(){
+            $(".header_nav-sp").fadeToggle();
+            $(".sp-menu-btn").toggleClass("open");
+        })
+    })
+</script>
 <body>
     <header id="header">
         <div class="header_inner">
@@ -28,8 +38,24 @@
                 </ul>
             </nav>
         </div>
+    
+            <div class="sp-menu-btn"><span></span></div>
+            <nav class="header_nav-sp">
+                <ul>
+                    <li><a href="#aboutUs">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                    
+                </ul>
+            </nav>
+       
         <div class="slider">
+            <picture>
+                <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
             <img src="./images/pc_first-100.jpg" alt="カフェ店内">
+            </picture>
         </div>
         
     </header>
@@ -85,6 +111,37 @@
               </div>
             </div>
         </section>
+
+        <section id="aboutUs-sp">
+            <div class="ABOUTUS-sp">
+                <div class="section-title-sp">
+                    <h3 class="section-title1-sp">
+                        <img src="./images/about_us@2x.png" alt="aboutus">
+                    </h3>
+                </div>    
+                <div class="aboutphoto-sp">
+                 <img src="./images/about_us@2x-100.jpg" alt="コーヒー">
+                </div>
+                <div class="text-sp">
+                <h4 class="text-title1-sp">
+                    私たちが提供する
+                    <br>
+                    こだわりのコーヒー
+                </h4>
+                <p>
+                    サービスを提供する上での想いや心がけていることなど、メッセージ
+                    を文章で紹介します。サービスを提供する上での想いや心がけて
+                    いることなど、メッセージを文章で紹介します。サービスを提供する上
+                    での想いや心がけていることなど、メッセージを文章で紹介します。サ
+                    ービスを提供する上での想いや心がけていることなど、メッセージを
+                    文章で紹介します。サービスを提供する上での想いや心がけている
+                    ことなど、メッセージを文章で紹介します。
+                
+                </p>
+                </div>
+
+              </div>
+         </section>
         <section id="menu">
             <div class="MENU">
               <h3 class="section-title2">
@@ -93,7 +150,11 @@
             </div>  
               <ul>
                  <li>
+                    <picture>
+                        <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width: 767px)">
+                  
                      <img src="./images/pc_menu_drink-100.jpg" alt="menudrink">
+                    </picture>
                      <h4 class="text-title2">
                         Drink
                      </h4>
@@ -103,7 +164,10 @@
                      </p>
                  </li>
                  <li>
+                    <picture>
+                        <source srcset="./images/food_sp@2x-100.jpg" media="(max-width: 767px)">
                      <img src="./images/pc_menu_food-100.jpg" alt="menufood">
+                    </picture>
                      <h4 class="text-title2">
                         Food
                      </h4>
@@ -113,7 +177,10 @@
                      </p>
                   </li>
                   <li>
+                    <picture>
+                      <source srcset="./images/cake_sp@2x-100.jpg" media="(max-width: 767px)">
                       <img src="./images/pc_menu_sweets-100.jpg" alt="menusweets">
+                    </picture>  
                       <h4 class="text-title2">
                         Sweets
                       </h4>
@@ -135,7 +202,10 @@
             <div class="GALLERY">
                 <ul>
                     <li>
+                        <picture>
+                        <source srcset="./images/mobile_gallery-100.jpg" media="(max-width: 767px)">
                         <img src="./images/pc_gallary_05-100.jpg" alt="ギャラリー店内1">
+                        </picture>
                     </li>
                     <li>
                         <img src="./images/pc_gallary_04-100.jpg" alt="ギャラリーコーヒー豆">
@@ -184,7 +254,7 @@
                             <P class="news">
                                 コーヒーの日で30%OFFイベントを開催[３日間限定]
                             </P>
-
+                        </li>
                     </ul>
                 </div>
             </section>

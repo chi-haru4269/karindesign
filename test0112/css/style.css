@@ -10,7 +10,7 @@
     padding-left: 2.51%;
     padding-right: 6.73%;
     position: absolute;
-    z-index:9999;
+    z-index:9997;
     top: 0;
     left: 0;
 }
@@ -32,7 +32,7 @@
 main{
     background-color: #E8D9BF;
 }
-.container{
+.container , footer{
     max-width: 1020px;
     padding: 0 10px;
     margin: 0 auto
@@ -178,12 +178,14 @@ main{
 }
 #gallery ul li{
     width: 20%;
+    
 }
 
 .event-title{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
 }
 
@@ -194,14 +196,19 @@ main{
    
 
 }
-
-#event ul{
-    margin-top: 40px;
-   padding-bottom: 40px;
-    padding-top: 40px;
-    padding-left: 160px;
+.EVENT{
     background-color: #fff;
     border: solid 3px #4F260B
+    
+}
+
+#event ul{
+    margin: 40px auto 0;
+   padding-bottom: 40px;
+    padding-top: 40px;
+    max-width: 700px
+    
+
  
 }
 
@@ -232,7 +239,7 @@ main{
 }
 
 #access iframe{
-    width: 1920px;
+    width: 100%;
     height: 471px;
     filter:grayscale(100%);
     margin-top: 23px;
@@ -269,3 +276,204 @@ main{
     bottom: 20px;
     right: 20px;
 }
+
+.sp-menu-btn{
+    display: none;
+}
+
+.header_nav-sp{
+    display: none;
+}
+
+
+
+    .sp-menu-btn span{
+        position: absolute;
+        content:"";
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        top: 15px;
+        transition: 0.5s;
+    }
+
+    .sp-menu-btn span::before{
+        position: absolute;
+        content:"";
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        top: -10px;
+        transition: 0.5s;
+    }
+
+    .sp-menu-btn span::after{
+        position: absolute;
+        content:"";
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        bottom: -10px;
+    }
+
+    .open span{
+        background-color: transparent;
+    }
+
+    .open span::before{
+        transform: rotate(-45deg);
+        top: 0;
+
+    }
+
+    .open span::after{
+        transform: rotate(45deg);
+        bottom: 0;
+
+    }
+
+    .header_nav-sp{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000bd;
+        z-index: 9998;
+    }
+
+    .header_nav-sp ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        gap: 20px;
+    }
+
+    .header_nav-sp li{
+        color: #fff;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #aboutUs-sp{
+        display: none;
+    }
+
+    .section-title1-sp{
+        width: 272px;
+        height: 77px;
+        
+    }
+    .section-title-sp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 68px;
+        margin-bottom: 17px;
+    }
+
+    .aboutphoto-sp img{
+        width: 100%;
+    }
+
+    .text-title1-sp{
+        font-size: 36px;
+        line-height: 1.25;
+        letter-spacing: 0em;
+        margin: 34px auto 0;
+    }
+
+    #aboutUs-sp p{
+        font-size: 16px; 
+        line-height: 1.75;
+        letter-spacing: 0em;
+        margin-top: 32px;
+    }
+
+
+
+
+
+
+
+    @media screen and (max-width: 1100px){
+        .header_nav{
+            display: none;
+        }
+        .sp-menu-btn{
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            z-index: 9999;
+            transition: 0.5s;
+        
+        }
+        
+        .first{
+            font-size: 17px;
+            
+        }
+        
+        .second{
+            font-size: 38px;
+            line-height: 1.15;
+            
+        }
+        
+        .third{
+            font-size: 16px;
+            line-height: 1.87;
+           
+        }
+
+        .text-title1{
+            font-size: 36px;
+            line-height: 1.25;
+
+        }
+    }   
+
+     @media screen and (max-width: 767px){
+        #aboutUs{
+            display: none;
+        }   
+
+        #aboutUs-sp{
+            display:block;
+        }
+
+        #menu ul{
+            flex-direction: column;
+        }
+        #menu ul li{
+            width: 100%;
+        }
+
+        .footer_inner{
+            flex-direction: column;
+        }
+
+        .logo2{
+            width: 60%;
+        }
+
+        #event ul li{
+            flex-direction: column;
+            gap: 20px;
+          
+            
+        }
+
+        
+        
+
+       
+    }
+
+
+
