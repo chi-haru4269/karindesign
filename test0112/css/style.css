@@ -464,9 +464,30 @@ main{
 
         #event ul li{
             flex-direction: column;
-            gap: 20px;
+            gap: 5px;
+            margin-bottom: 28px;
           
             
+        }
+        .pc{
+            display: none;
+        }
+ 
+        .date{
+            margin-bottom: 0;
+            font-size: 16px;
+
+        }
+        .news{
+            font-size: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        #event ul{
+            margin-top: 0;
         }
 
         
