@@ -130,7 +130,7 @@ main{
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    margin-top: 49px;
+    margin-top: 35px;
 
 }
 
@@ -165,20 +165,13 @@ main{
  
     
 }
-
-
-#gallery ul {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 27px;
-    
+  
+.GALLERY img{
+    width: 100%;
     
 }
-#gallery ul li{
-    width: 20%;
-    
+.gallery-title{
+    margin-bottom: 20px;
 }
 
 .event-title{
@@ -191,6 +184,7 @@ main{
 
 .section-title4{
     margin-top:71px;
+    margin-bottom: 20px;
     width: 173px;
  
    
@@ -488,13 +482,20 @@ main{
 
         #event ul{
             margin-top: 0;
+            padding: 20px 9.17%;
         }
 
-        
-        
+      }
 
-       
-    }
+      .slick-dots{
+        bottom: 0;
+      }
+      .slick-dots li button:before{
+        color: #fff;
+      }
 
+      .slick-dots li.slick-active button:before{
+        color: #fff;
+      }
 
 
