@@ -484,6 +484,9 @@ main{
             margin-top: 0;
             padding: 20px 9.17%;
         }
+        .totop{
+            width: 80px;
+        }
 
       }
 
@@ -498,4 +501,7 @@ main{
         color: #fff;
       }
 
+      .slick-dotted.slick-slider{
+        margin-bottom: 0;
+      }
 
