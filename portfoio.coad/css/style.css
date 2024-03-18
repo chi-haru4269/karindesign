@@ -448,24 +448,33 @@ body{
     z-index: 9999;
 
 }
-.trrrrip{
+.trrrrip, .hamburger_rich, .hamburger_pop, .loveposter{
     margin-top: 100px;
     margin-bottom: 393px ;
  
 }
 
-.trp_main, .Lhd_main{
+.trp_main, .hbg_rich_main{
     width: 40.26%;
     margin: 0 auto;
 
 }
+.Lhd_main, .hbg_pop_main, .workers_main, .dc_main, .pf_main{
+    width: 54.90%;
+    margin: 0 auto;
+}
+.lvp_main{
+    width: 37.55%;
+    margin: 0 auto;
+}
 
-.trrrrip_ttl, .Lhd_ttl{
+
+.trrrrip_ttl, .Lhd_ttl, .hbg_rich_ttl, .hbg_pop_ttl, .workers_ttl, .dc_ttl, .pf_ttl, .lvp_ttl{
     font-size: 20px;
     border-left: 5px solid #726145;
     padding: 5px;
 }
-.trp_wrapper, .Lhd_wrapper{
+.trp_wrapper, .Lhd_wrapper, .hbg_rich_wrapper, .hbg_pop_wrapper, .workers_wrapper, .dc_wrapper, .pf_wrapper, .lvp_wrapper{
     width: 36.60%;
     margin-top: 53px;
     margin-left: 31.69%;
@@ -473,18 +482,27 @@ body{
     margin-bottom: 69px;
 
 }
-.trp_contents, .Lhd_contents{
+.trp_contents, .Lhd_contents, .hbg_rich_contents, .hbg_pop_contents, .workers_contents,
+.dc_contents, .pf_contents, .lvp_contents{
     width: 36.06%;
     margin: 0 auto;
     
 }
-.trp_genre, .trp_space, .trp_tool, .Lhd_genre, .Lhd_space, .Lhd_tool{
+.trp_genre, .trp_space, .trp_tool, .Lhd_genre, .Lhd_space, .Lhd_tool, .hbg_rich_genre,
+.hbg_rich_space, .hbg_rich_tool, .hbg_pop_genre, .hbg_pop_space,.hbg_pop_tool,
+.workers_genre, .workers_space, .workers_tool, .dc_genre, .dc_space, .dc_tool, .pf_genre, .pf_space, .pf_tool,
+.lvp_genre, .lvp_space, .lvp_tool{
     display: flex;
     align-items: center;
     gap: 8.4%;
     margin-bottom: 33px;
     margin-top: 44px;
     
+}
+.works_text{
+    margin-top: 10px;
+    padding-left: 10px;
+    line-height: 2.18;
 }
 .border{
     width: 47.58%;
@@ -517,23 +535,45 @@ body{
     background-color: #aaa08f;
 }
 
-.LIFE_hair{
+.LIFE_hair, .workers, .designcafe, .portfolio{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.LIFE_hair_full{
+.LIFE_hair_full, .wks_full, .dc_full, .pf_full{
     display: flex;
     justify-content: center;
- 
- }
+}
 
 .Lhd_full{
     width: 73.20%;
 }
-.Lhd_works_btn{
+.btm_works_btn{
     margin-bottom: 148px;
 
 }
+.wks_full, .dc_full, .pf_full{
+    gap: 1.75%;
+}
+
+
+.contact_ttl{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 102px;
+}
+.contact_logo{
+    width: 17.34%;
+}
+.contact_text{
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    margin-top: 82px;
+}
+
+
 
 .thanks_ttl{
     display: flex;

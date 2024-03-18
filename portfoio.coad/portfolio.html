@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>portfolio</title>
     <script>
         (function(d) {
           var config = {
@@ -40,24 +40,51 @@
     <nav>
         <ol class="breadcrumbs">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./works.html">Works</a></li>
+            <li><a href="./portfolio.html">ポートフォリオ</a></li>
         </ol>
     </nav>
-    <section class="contact">
-        <div class="contact_ttl">
-            <h1 class="contact_logo">
-                <img src="./image/2x/contact@2x.png" alt="コンタクト文字">
-            </h1>
-            <p class="contact_text">下記フォームよりお問合せをお願いします。<br>2日以内にご返信をしますので返信がない場合は
-            <br>お手数ですが再度お問合せをお願いします。</p>
+    <section class="portfolio">
+        <div class="pf_main">
+            <img src="./image/1x/portfolio.png" alt="ポートフォリオ写真">
         </div>
-        <form action="" method="post">
-            <input type="text" name="name">
-            <input type="email" name="email">
-            <input type="tel" name="tel">
-            <textarea name="inquiry"></textarea>
-            <button>送信する</button>
-        </form>
+        <div class="pf_wrapper">
+        <h1 class="pf_ttl">ポートフォリオ</h1>
+        <p class="works_text">課題でポートフォリオを制作しました。
+            コンセプトは”小さな街のデザイン屋さん”、世界観はアンティークなアトリエをイメージして作っています。
+            
+        </p>
+        </div>
+        <div class="border"></div>
+        <div class="pf_contents">
+            <ul class="pf_genre">
+                <li class="genre">ジャンル</li>
+                <li class="genre_text">ポートフォリオ制作</li>
+            </ul>
+            <ul class="pf_space">
+                <li class="space">制作範囲</li>
+                <li class="space_text">デザイン / コーディング</li>
+            </ul>
+            <ul class="pf_tool">
+                <li class="tool">使用ツール</li>
+                <li class="tool_text">Illustrator / Photoshop<br>HTML / CSS / JavaScript / jQuery</li>
+            </ul>
+        </div>
+    </section>
+    <sectin class="portfolio_full">
+        <ul class="pf_full">
+            <li class=pf_pc><img src="./image/1x/porrtfolio_pc.jpg" alt="ポートフォリオフルページpc">
+        </li>
+        <li class="pf_sp">
+            <img src="./image/1x/portfolio_sp.jpg" alt="ポートフォリオフルページsp">
+        </li>
+        </ul>
+    </sectin>
+    <section class="btm_works_btn">
+        <div class="works_top_btn">
+        <p class="works_top_btntxt"><a href="./works.html">Works一覧に戻る</a></p>
+        </div>
+    </section>
         <footer class="footer">
             <nav class="footer_nav">
                 <ul>
@@ -73,6 +100,8 @@
             </p>
 
         </footer>
+    
+
     
 </body>
 </html>
