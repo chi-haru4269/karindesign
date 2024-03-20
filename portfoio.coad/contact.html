@@ -51,13 +51,34 @@
             <p class="contact_text">下記フォームよりお問合せをお願いします。<br>2日以内にご返信をしますので返信がない場合は
             <br>お手数ですが再度お問合せをお願いします。</p>
         </div>
+    </section>
+    <section class="contact_form">
         <form action="" method="post">
-            <input type="text" name="name">
-            <input type="email" name="email">
-            <input type="tel" name="tel">
-            <textarea name="inquiry"></textarea>
-            <button>送信する</button>
+            <div class="form_inner">
+                <label class="label">お名前</label>
+                <br>
+                <input type="text" class="inputs" name="name" required/>
+            </div>
+            <div class="form_inner">
+                <label class="label">メールアドレス</label>
+                <br>
+                <input type="email" class="inputs" name="email" required/>
+            </div>
+            <div class="form_inner">
+                <label class="label">ご連絡可能な電話番号</label>
+                <br>
+                <input type="text" class="inputs" name="tel" required/>
+            </div>
+            <div class="form_inner">
+                <label class="label">お問合せ内容</label>
+                <br>
+                <textarea class="inputs"></textarea>
+            </div>
+            <div class="button_area">
+                <input type="submit" value="送信する" />
+            </div>
         </form>
+    </section>   
         <footer class="footer">
             <nav class="footer_nav">
                 <ul>
