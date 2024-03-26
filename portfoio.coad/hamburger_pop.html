@@ -16,6 +16,7 @@
       </script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header id="header_other">
@@ -36,7 +37,18 @@
                 </ul>
             </nav>
         </div>
+        <div class="sp-menu-btn"><span></span></div>
+            <nav class="header_nav_sp">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
     </header>
+    <main>
     <nav>
         <ol class="breadcrumbs">
             <li><a href="./index.html">Home</a></li>
@@ -73,6 +85,7 @@
             <a href="./works.html">Works一覧に戻る</a></p>
             </div>
         </section>
+    </main>    
         <footer class="footer">
             <nav class="footer_nav">
                 <ul>
@@ -88,6 +101,14 @@
             </p>
 
         </footer>
+        <script>
+            $(function(){
+                $(".sp-menu-btn").on("click",function(){
+                    $(".header_nav_sp").fadeToggle();
+                    $(".sp-menu-btn").toggleClass("open");
+                });
+            });
+        </script>    
     
 </body>
 </html>

@@ -16,7 +16,10 @@
       </script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
     <header id="header">
         <div class="header_inner">
@@ -36,36 +39,52 @@
                 </ul>
             </nav>
         </div>
+            <div class="sp-menu-btn"><span></span></div>
+            <nav class="header_nav_sp">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
         <div class="slider">
-            <img src="./image/1x/main1.jpg" alt="アトリエ看板">
+            <picture>
+                <source srcset="./image/2x/mv_sp1.jpg" media="(max-width: 767px)">       
+                <img src="./image/1x/main1.jpg" alt="アトリエ看板">
+            </picture>
         </div>
     </header>
+    <main>
       
         <section class="about">
             <div class="about_wrapper">
                 <div class="about_text_content">
                     <h2 class="main_about">
+                        <picture>
+                        <source srcset="./image/2x/welcometo_sp.png" media="(max-width: 767px)">
                         <img src="./image/2x/main-about@2x.png" alt="見出し１">
+                        </picture>
                     </h2>
                     <div class="about_textbox">
                         <div class="about_text_wrapper">
                         <p class="abouttext">
-                            ここはちょっとだけこだわりの強いオーナーが<br>ひっそりと大好きなデザインを
-                            創っているアトリエ。
+                            ここはちょっとだけこだわりの強い<br class=about_br_sp>オーナーが<br class="about_br_pc">ひっそりと大好きなデザインを<br class=about_br_sp>創っているアトリエ。
                         </p>
                         <p class="abouttext">
-                            お客様のオーダーに合わせてお客様の想いを乗せたデザインを<br>１つ１つ
-                            丁寧に心を込めて創りあげています。
+                            お客様のオーダーに合わせて<br class=about_br_sp>お客様の想いを乗せたデザインを<br class=about_br_sp><br class="about_br_pc">１つ１つ丁寧に心を込めて創りあげています。
                         </p>
                         <p class="abouttext">
-                            愛されるデザイン<br>心の中に在り続けるデザインを。<br>
-                            デザインを通してお客様の心と未来が豊かで美しいものになりますように....
+                            愛されるデザイン<br class=about_br_sp><br class="about_br_pc">心の中に在り続けるデザインを。<br class=about_br_sp><br class="about_br_pc">
+                            デザインを通してお客様の心と未来が<br class=about_br_sp>豊かで美しいものになりますように....
                         </p>
                         <div class="about_btn_wrapper">
                             <div class="about_btn">
-                            <p class="about-btn_txt">
+                           
                             <a href="./about.html">About owner</a>
-                            </p>
+                            
                             </div>
                         </div>
                         </div>
@@ -75,6 +94,7 @@
                 <div class="main-aboutphoto">
                     <img src="./image/1x/アセット 50-50.jpg" alt="ワークスペース">
                 </div>
+
             
         </section>
             </div>
@@ -125,6 +145,7 @@
                 </div>
             </div>
         </section>
+    </main>    
         <section class="works">
             <div class="works_wrapper">
                 <h2 class="main_works">
@@ -163,6 +184,7 @@
                 </div>
             </div>
         </section>
+    <main>  
         <section class="contact">
             <div class="contact_wrapper">
                 <h2 class="main_contact">
@@ -176,7 +198,7 @@
                 <div class="contact_btn">
                     <a href=./contact.html>お問合せはこちら</a></p>
                 </div>
-                
+    </main>           
                 <div class="contact_img">
                     <img src="./image/1x/contact-illust.jpg" alt="街並みイラスト">
                 </div>
@@ -199,7 +221,14 @@
             </p>
 
         </footer>
- 
-    
+   
+        <script>
+            $(function(){
+                $(".sp-menu-btn").on("click",function(){
+                    $(".header_nav_sp").fadeToggle();
+                    $(".sp-menu-btn").toggleClass("open");
+                });
+            });
+        </script>    
 </body>
 </html>
