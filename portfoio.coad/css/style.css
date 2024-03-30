@@ -4,6 +4,44 @@ body{
     background-color: #f8f7f6;
    
 }
+#loader{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#loader path{
+    fill:#000;
+}
+#mask path{
+    fill: none;
+    stroke:#ffffff;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+    
+
+.loader{
+    background-color: #f8f7f6;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+
+}
+.loader img {
+    width: 50%;
+   
+}
+
+
 main{
     padding: 0 10px;
 }
@@ -37,15 +75,28 @@ main{
     z-index: 9997;
     top: 0;
     left: 0;
+}
 
+.header_nav li a:hover{
+    opacity: 0.7;
+}
+.header_nav_other li a:hover{
+    opacity: 0.7;
 }
 .logo{
     width: 138px;
+}
+.logo a:hover{
+    opacity: 0.7;
 }
 
 .logo_other{
     width: 138px;
 }
+.logo_other a:hover{
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 767px){
     .logo, .logo_other{
         width: 74px;
@@ -71,6 +122,17 @@ main{
 .header_nav_sp{
     display: none;
 }
+.slick-dots{
+    bottom: 0;
+    color: #fffafa;
+}
+.slick-dots li button:before{
+    color: #fffafa;
+}
+.slick-dots li.slick-active button:before{
+    color: #fffafa;
+}
+
 
 @media screen and (max-width: 1100px){
     .header_nav, .header_nav_other{
@@ -131,6 +193,7 @@ main{
         height: 100vh;
         background-color: #B8B0A2;
         z-index: 9998;
+        top: 0;
     }
     .header_nav_sp ul{
         display: flex;
@@ -143,6 +206,10 @@ main{
         font-size: 20px;
         color: #fffafa;
         text-align: center;
+      
+    }
+    .header_nav_sp li a:hover{
+        opacity: 0.7;
     }
 
 }
@@ -408,7 +475,7 @@ main{
     position: relative;
 }
 .banner_box img, .lp_box img, .paperitem_box img{
-    transition: opacity 0.5s;
+    transition: opacity 0.3s;
 }
 .banner_box:hover img:first-of-type, .lp_box:hover img:first-of-type, .paperitem_box:hover img:first-of-type{
     opacity: 0;
@@ -484,7 +551,7 @@ main{
 .contact_box{
     text-align: center;
 }
-.main_contact_text{
+.contact_text{
     margin-bottom: 42px;
     line-height: 1.75;
 }
@@ -541,6 +608,10 @@ main{
 }
 .footer_nav li{
     color:#fffafa;
+   
+}
+.footer_nav li a:hover{
+    opacity: 0.7;
 }
 .copylight{
     text-align: center;
@@ -591,6 +662,9 @@ main{
 }
 .breadcrumbs li:last-child::after{
     display: none;
+}
+.breadcrumbs li a:hover{
+    opacity: 0.7;
 }
 
 
@@ -676,6 +750,10 @@ main{
 
 
 @media screen and (max-width: 767px){
+    .breadcrumbs{
+        font-size: 10px;
+    }
+    
     .About_wrapper{
         flex-direction: column;
         margin-top: 50px;
@@ -831,22 +909,27 @@ main{
         margin-bottom: 60px;
     }
     .Banner_ttl{
-        margin-left: 95px;
+        margin-left: 12.3%;
     }
     .LP_ttl{
-        margin-left: 95px;
+        margin-left: 12.3%;
     }
     .Web_ttl{
-        margin-left: 95px;
+        margin-left: 12.3%;
     }
     .ppi_ttl{
-        margin-left: 95px;
+        margin-left: 12.3%;
     
     }
-    .Banner_contents, .LP_contents, .Web_contents, .ppi_contents{
+    .Banner_contents, .LP_contents {
         flex-direction: column;
         gap: 30px;
         margin-bottom: 100px;
+    }
+    .Web_contents, .ppi_contents{
+        flex-direction: column;
+        margin-bottom: 100px;
+        gap: 0;
     }
     .Banner_wrapper, .LP_wrapper, .Web_wrapper, .ppi_wrapper{
         width: 74.4%;
@@ -889,7 +972,7 @@ main{
     width: 75%;
 }
 .lvp_main img{
-    width: 56%;
+    width: 60%;
 }
 
 
@@ -982,6 +1065,13 @@ main{
     gap: 1.75%;
 }
 
+.wks_pc, .dc_pc, .pf_pc{
+    width: 70%;
+}
+.wks_sp, .dc_sp, .pf_sp{
+    width:15%;
+}
+
 @media screen and (max-width: 841px){
     .trrrrip_br{
         display: none;
@@ -1006,7 +1096,7 @@ main{
         
         
     }
-    .trp_main img, .hbg_rich_main img{
+    .trp_main img, .hbg_rich_main img, .lvp_main img{
         width: 66%;
     }
     .genre, .space, .tool, .genre_text, .space_text{
@@ -1030,10 +1120,18 @@ main{
         justify-content: center;
         gap: 20px;
     }
-    .pf_sp{
+    .wks_pc, .dc_pc, .pf_pc{
         margin: 0 auto;
-        width: 60%;
-
+        width: 100%;
+    }
+    .wks_sp, .dc_sp, .pf_sp{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .works_top_btn a{
+        font-size: 14px;
+        height: 35px;
+        line-height: 35;
     }
 }
 
@@ -1099,8 +1197,10 @@ textarea{
 }
 .button_area{
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 278px;
+    padding-top: 70px;
+    padding-bottom: 278px;
+    margin: 0 auto;
+    width: 463px;
 
 }
 input[type="submit"]{
