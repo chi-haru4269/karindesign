@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header id="header_other">
@@ -60,6 +61,7 @@
                  <img src="./image/2x/works@2x.png" alt="ワークス見出し">
              </h1>
             </div>
+            <section id="Banner">
             <h2 class="Banner_ttl">
                 <img src="./image/2x/banner@2x.png" alt="バナータイトル">
             </h2>
@@ -94,6 +96,8 @@
                     </li>
                 </ul>
             </div>
+            </section>
+            <section id="LP">
             <h2 class="LP_ttl">
                 <img src="./image/2x/lp@2x.png" alt="LPタイトル">
             </h2>
@@ -128,6 +132,8 @@
                     </li>
                 </ul>
             </div>
+            </section>
+            <section id="Web">
             <h2 class="Web_ttl">
                 <img src="./image/2x/website@2x.png" alt="Webタイトル">
             </h2>
@@ -156,6 +162,8 @@
                     </li>
                 </ul>
             </div>
+            </section>
+            <section id="ppi">
             <h2 class="ppi_ttl">
                 <img src="./image/2x/paperitem@2x.png" alt="ppiタイトル">
             </h2>
@@ -184,6 +192,7 @@
                     </li>
                 </ul>
             </div>
+            </section>
         </section>
 
     </main>
@@ -208,6 +217,12 @@
                     $(".header_nav_sp").fadeToggle();
                     $(".sp-menu-btn").toggleClass("open");
                 });
+            ScrollReveal({ reset: false, distance: "60px", duration: 2000 });
+              ScrollReveal().reveal('#Banner', { delay: 300, origin: "bottom" });
+              ScrollReveal().reveal('#LP', { delay: 300, origin: "bottom" });
+              ScrollReveal().reveal('#Web', { delay: 300, origin: "bottom" });
+              ScrollReveal().reveal('#ppi', { delay: 300, origin: "bottom" });
+            
             });
         </script>    
     

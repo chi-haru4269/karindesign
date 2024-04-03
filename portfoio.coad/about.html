@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header id="header_other">
@@ -119,6 +120,9 @@
                     $(".header_nav_sp").fadeToggle();
                     $(".sp-menu-btn").toggleClass("open");
                 });
+          
+            ScrollReveal({ reset: false, distance: "60px", duration: 2000 });
+              ScrollReveal().reveal('.About_wrapper', { delay: 300, origin: "bottom" });
             });
         </script>       
 </body>

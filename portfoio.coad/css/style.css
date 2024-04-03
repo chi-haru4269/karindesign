@@ -4,24 +4,36 @@ body{
     background-color: #f8f7f6;
    
 }
-#loader{
-    width: 50%;
+.writting-text{
+    width: 100%;
     height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-#loader path{
-    fill:#000;
-}
-#mask path{
+  }
+  #text{
+    fill: #595959;
+  }
+  #text-path{
+    mask: url(#mask-stroke);
+  }
+  #mask{
     fill: none;
-    stroke:#ffffff;
-    stroke-width: 10px;
+    stroke: #ffffff;
     stroke-linecap: round;
     stroke-linejoin: round;
-}
+    stroke-width: 14.5;
+    stroke-dasharray: 3350px;
+    stroke-dashoffset: 3350px;
+    animation: writeanime 5s ease-out infinite;
+  }
+  
+  @keyframes writeanime{
+    0%{
+      stroke-dashoffset: 3350px;
+    }
+    100%{
+      stroke-dashoffset: 0px;
+    }
+  }
+
     
 
 .loader{
@@ -329,6 +341,7 @@ main{
     position: absolute;
     margin-top: 182.5px;
     z-index: -1;
+    left: 0;
 }
 .menu_contents{
     max-width: 1000px;
@@ -1013,7 +1026,7 @@ main{
     line-height: 2.18;
 }
 .border{
-    width: 65%;
+    width: 80%;
     border-bottom: 1px solid #aaa08f;
     margin: 0 auto;
 }

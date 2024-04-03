@@ -1,0 +1,29 @@
+.writing-text{
+    width: 100%;
+    height: auto;
+  }
+  #text{
+    fill: #595959;
+  }
+  #text-path{
+    mask: url(#mask-stroke);
+  }
+  #mask{
+    fill: none;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 14.5;
+    stroke-dasharray: 3350px;
+    stroke-dashoffset: 3350px;
+    animation: writeanime 5s ease-out infinite;
+  }
+  
+  @keyframes writeanime{
+    0%{
+      stroke-dashoffset: 3350px;
+    }
+    100%{
+      stroke-dashoffset: 0px;
+    }
+  }
