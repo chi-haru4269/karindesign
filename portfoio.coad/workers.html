@@ -15,9 +15,12 @@
         })(document);
       </script>
     <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+    
 </head>
 <body>
     <header id="header_other">
@@ -84,7 +87,7 @@
         </div>
     </section>
     <sectin class="workers_full">
-        <ul class="wks_full">
+        <ul class="wks_full" data-aos="fade-up" data-aos-duration="2000">
             <li class=wks_pc><img src="./image/3x/workers_pc.jpg" alt="ワーカーズフルページpc">
         </li>
         <li class="wks_sp">
@@ -114,13 +117,13 @@
     
         </footer>
         <script>
+             AOS.init();
             $(function(){
                 $(".sp-menu-btn").on("click",function(){
                     $(".header_nav_sp").fadeToggle();
                     $(".sp-menu-btn").toggleClass("open");
                 });
-            ScrollReveal({ reset: false, distance: "60px", duration: 2000 });
-                ScrollReveal().reveal('.wks_full', { delay: 300, origin: "bottom" });
+          
             });
         </script>    
     

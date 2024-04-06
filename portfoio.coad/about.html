@@ -15,10 +15,12 @@
         })(document);
       </script>
     <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
     <header id="header_other">
@@ -63,7 +65,7 @@
                 <img src="./image/2x/about@2x.png" alt="アバウト見出し">
             </h1>
         </div>
-            <div class="About_wrapper">
+            <div class="About_wrapper" data-aos="fade-up" data-aos-duration="2000">
                 <div class="About_photo">
                     <img src="./image/1x/about.jpg" alt="アバウト写真">
                 </div>
@@ -115,14 +117,12 @@
         </footer>
         
         <script>
+              AOS.init();
             $(function(){
                 $(".sp-menu-btn").on("click",function(){
                     $(".header_nav_sp").fadeToggle();
                     $(".sp-menu-btn").toggleClass("open");
                 });
-          
-            ScrollReveal({ reset: false, distance: "60px", duration: 2000 });
-              ScrollReveal().reveal('.About_wrapper', { delay: 300, origin: "bottom" });
             });
         </script>       
 </body>

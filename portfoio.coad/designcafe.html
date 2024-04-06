@@ -15,10 +15,10 @@
         })(document);
       </script>
     <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <body>
     <header id="header_other">
         <div class="header_inner_other">
@@ -84,7 +84,7 @@
         </div>
     </section>
     <sectin class="designcafe_full">
-        <ul class="dc_full">
+        <ul class="dc_full" data-aos="fade-up" data-aos-duration="2000" >
             <li class=dc_pc><img src="./image/1x/cafe_pc.png" alt="デザインカフェフルページpc">
         </li>
         <li class="dc_sp">
@@ -114,14 +114,13 @@
 
         </footer>
         <script>
+             AOS.init();
             $(function(){
                 $(".sp-menu-btn").on("click",function(){
                     $(".header_nav_sp").fadeToggle();
                     $(".sp-menu-btn").toggleClass("open");
                 });
-            ScrollReveal({ reset: false, distance: "60px", duration: 2000 });
-  
-              ScrollReveal().reveal('.dc_full', { delay: 300, origin: "bottom" });
+           
             });
         </script>    
     

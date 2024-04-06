@@ -15,9 +15,11 @@
         })(document);
       </script>
     <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
 </head>
 <body>
     <header id="header_other">
@@ -61,7 +63,7 @@
                  <img src="./image/2x/works@2x.png" alt="ワークス見出し">
              </h1>
             </div>
-            <section id="Banner">
+            <section id="Banner" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="Banner_ttl">
                 <img src="./image/2x/banner@2x.png" alt="バナータイトル">
             </h2>
@@ -97,7 +99,7 @@
                 </ul>
             </div>
             </section>
-            <section id="LP">
+            <section id="LP" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="LP_ttl">
                 <img src="./image/2x/lp@2x.png" alt="LPタイトル">
             </h2>
@@ -133,7 +135,7 @@
                 </ul>
             </div>
             </section>
-            <section id="Web">
+            <section id="Web" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="Web_ttl">
                 <img src="./image/2x/website@2x.png" alt="Webタイトル">
             </h2>
@@ -163,7 +165,7 @@
                 </ul>
             </div>
             </section>
-            <section id="ppi">
+            <section id="ppi"data-aos="fade-up" data-aos-duration="2000" >
             <h2 class="ppi_ttl">
                 <img src="./image/2x/paperitem@2x.png" alt="ppiタイトル">
             </h2>
@@ -212,16 +214,13 @@
 
         </footer>
         <script>
+                AOS.init();
             $(function(){
                 $(".sp-menu-btn").on("click",function(){
                     $(".header_nav_sp").fadeToggle();
                     $(".sp-menu-btn").toggleClass("open");
                 });
-            ScrollReveal({ reset: false, distance: "60px", duration: 2000 });
-              ScrollReveal().reveal('#Banner', { delay: 300, origin: "bottom" });
-              ScrollReveal().reveal('#LP', { delay: 300, origin: "bottom" });
-              ScrollReveal().reveal('#Web', { delay: 300, origin: "bottom" });
-              ScrollReveal().reveal('#ppi', { delay: 300, origin: "bottom" });
+            
             
             });
         </script>    

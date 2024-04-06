@@ -66,27 +66,32 @@
         </div>
     </section>
     <section class="contact_form">
-        <form action="" method="post">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd6Dd-KklUHWSFLJPoO35VSHnp1b4QTwKwbJYq5PWkOTp7QGQ/formResponse"
+        method="post" target="hidden_iframe" onsubmit="submitted=true;">
             <div class="form_inner">
                 <label class="label">お名前</label>
-                <input type="text" class="inputs" name="name" required/>
+                <input type="text" class="inputs" name="entry.178104938" required/>
             </div>
             <div class="form_inner">
                 <label class="label">メールアドレス</label>
-                <input type="email" class="inputs" name="email" required/>
+                <input type="email" class="inputs" name="entry.2139157796" required/>
             </div>
             <div class="form_inner">
                 <label class="label">ご連絡可能な電話番号</label>
-                <input type="text" class="inputs" name="tel" required/>
+                <input type="text" class="inputs" name="entry.1319574949" required/>
             </div>
             <div class="form_inner">
                 <label class="label">お問合せ内容</label>
-                <textarea class="inputs"></textarea>
+                <textarea class="inputs" name="entry.1743679879"></textarea>
             </div>
             <div class="button_area">
                 <input type="submit" value="送信する" />
             </div>
         </form>
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {window.location='./thanks.html';}"></iframe>
     </section>  
     </main>
         <footer class="footer">
