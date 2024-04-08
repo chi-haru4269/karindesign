@@ -997,8 +997,13 @@ main{
     .Banner_text, .LP_text, .Web_text, .ppi_text{
         font-size: 16px;
     }
+    .Banner_box img:last-of-type, .LP_box img:last-of-type, .ppi_box img:last-of-type, .Web_box img:last-of-type {
+        display: none;
 }
-
+    .Banner_box:hover img:first-of-type, .LP_box:hover img:first-of-type, .ppi_box:hover img:first-of-type, .Web_box:hover img:first-of-type{
+    opacity: 1;
+}
+}
 
 
 
