@@ -5,15 +5,19 @@ body{
    
 }
 .writting-text{
-    width: 50%;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
     height: auto;
 
   }
   .writing{
     margin: 0 auto;
+    
   }
   #text{
     fill: #B8B0A2;
+    
   }
   #text-path{
     mask: url(#mask-stroke);
