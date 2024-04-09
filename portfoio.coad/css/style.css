@@ -73,6 +73,8 @@ body{
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
+    animation: writeanime 2s linear forwards;
+  -webkit-animation: writeanime 2s linear forwards; /* Safari 用 */
   }
   
   .loading-animation.is-active {
