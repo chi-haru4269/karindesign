@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'jvo1djo',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header id="header_other">
+        <div class="header_inner_other">
+            <h1 class="logo_other">
+                <a href="./index.html">
+                    <img src="./image/2x/logo@2x.png"  alt="karin.design">
+                
+                </a>
+            </h1>
+            <nav class="header_nav_other">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sp-menu-btn"><span></span></div>
+            <nav class="header_nav_sp">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <nav>
+        <ol class="breadcrumbs">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ol>
+    </nav>
+    <main>
+    <section class="contact">
+        <div class="contact_ttl">
+            <h1 class="contact_logo">
+                <img src="./image/2x/contact@2x.png" alt="コンタクト文字">
+            </h1>
+            <p class="contactpg_text">下記フォームよりお問合せをお願いします。<br>2日以内にご返信をしますので返信がない場合は
+            <br>お手数ですが再度お問合せをお願いします。</p>
+        </div>
+    </section>
+    <section class="contact_form">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd6Dd-KklUHWSFLJPoO35VSHnp1b4QTwKwbJYq5PWkOTp7QGQ/formResponse"
+        method="post" target="hidden_iframe" onsubmit="submitted=true;">
+            <div class="form_inner">
+                <label class="label">お名前</label>
+                <input type="text" class="inputs" name="entry.178104938" required/>
+            </div>
+            <div class="form_inner">
+                <label class="label">メールアドレス</label>
+                <input type="email" class="inputs" name="entry.2139157796" required/>
+            </div>
+            <div class="form_inner">
+                <label class="label">ご連絡可能な電話番号</label>
+                <input type="text" class="inputs" name="entry.1319574949" required/>
+            </div>
+            <div class="form_inner">
+                <label class="label">お問合せ内容</label>
+                <textarea class="inputs" name="entry.1743679879"></textarea>
+            </div>
+            <div class="button_area">
+                <input type="submit" value="送信する" />
+            </div>
+        </form>
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {window.location='./thanks.html';}"></iframe>
+    </section>  
+    </main>
+        <footer class="footer">
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="copylight">
+                ©2024 Karin.design
+            </p>
+
+        </footer>
+        <script>
+            $(function(){
+                $(".sp-menu-btn").on("click",function(){
+                    $(".header_nav_sp").fadeToggle();
+                    $(".sp-menu-btn").toggleClass("open");
+                });
+        
+            });
+        </script>    
+    
+</body>
+</html>

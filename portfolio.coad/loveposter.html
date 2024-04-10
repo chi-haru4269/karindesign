@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loveposter</title>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'jvo1djo',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header id="header_other">
+        <div class="header_inner_other">
+            <h1 class="logo_other">
+                <a href="./index.html">
+                    <img src="./image/2x/logo@2x.png"  alt="karin.design">
+                
+                </a>
+            </h1>
+            <nav class="header_nav_other">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sp-menu-btn"><span></span></div>
+            <nav class="header_nav_sp">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+    <nav>
+        <ol class="breadcrumbs">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./works.html">Works</a></li>
+            <li><a href="./loveposter.html">LOVEポスター</a></li>
+        </ol>
+        <section class="loveposter">
+            <div class="lvp_main">
+                <img src="./image/1x/loveposter.png" alt="ポスター写真">
+            </div>
+            <div class="lvp_wrapper">
+            <h1 class="lvp_ttl">LOVEポスター</h1>
+            <p class="works_text">お子様の足形ポスターを作成しました。
+                Illsutratorで作成しています。</p>
+            </div>
+            <div class="border"></div>
+            <div class="lvp_contents">
+                <ul class="trp_genre">
+                    <li class="genre">ジャンル</li>
+                    <li class="genre_text">ポスター制作</li>
+                </ul>
+                <ul class="lvp_space">
+                    <li class="space">制作範囲</li>
+                    <li class="space_text">デザイン</li>
+                </ul>
+                <ul class="lvp_tool">
+                    <li class="tool">使用ツール</li>
+                    <li class="tool_text">Illustlator</li>
+                </ul>
+            </div>
+            <div class="works_top_btn">
+            <a href="./works.html">Works一覧に戻る</a></p>
+            </div>
+        </section>
+    </main>    
+        <footer class="footer">
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="copylight">
+                ©2024 Karin.design
+            </p>
+
+        </footer>
+        <script>
+            $(function(){
+                $(".sp-menu-btn").on("click",function(){
+                    $(".header_nav_sp").fadeToggle();
+                    $(".sp-menu-btn").toggleClass("open");
+                });
+            });
+        </script>    
+    
+</body>
+</html>
