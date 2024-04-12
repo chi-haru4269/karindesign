@@ -282,7 +282,7 @@ body{
     width: 66.5%;
     height: 440px;
     border: 1px solid #aaa08f;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(247,246,245,0.75);
 }
 .about_text_wrapper{
     padding-left: 8.04%;
@@ -1011,7 +1011,7 @@ body{
 
 
 
-.trrrrip, .hamburger_rich, .hamburger_pop, .loveposter{
+.trrrrip, .hamburger_rich, .hamburger_pop, .workers, .LIFE_hair, .designcafe, .portfolio .loveposter{
     max-width: 1000px;
     margin: 0 auto;
 
@@ -1104,16 +1104,16 @@ body{
     background-color: #aaa08f;
 }
 
-.LIFE_hair, .workers, .designcafe, .portfolio{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+
 .LIFE_hair_full, .wks_full, .dc_full, .pf_full{
+    max-width: 1000px;
+    margin:0 auto;
     display: flex;
     justify-content: center;
 }
 
 .Lhd_full{
+    margin-top: 30px;
     width: 73.20%;
 }
 .btm_works_btn{
@@ -1126,9 +1126,11 @@ body{
 
 .wks_pc, .dc_pc, .pf_pc{
     width: 70%;
+    margin-top: 30px;
 }
 .wks_sp, .dc_sp, .pf_sp{
     width:15%;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 841px){
