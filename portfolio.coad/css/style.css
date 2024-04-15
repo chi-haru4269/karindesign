@@ -1011,14 +1011,14 @@ body{
 
 
 
-.trrrrip, .hamburger_rich, .hamburger_pop, .workers, .LIFE_hair, .designcafe{
+
+
+.trrrrip, .hamburger_rich, .hamburger_pop, .workers, .LIFE_hair, .designcafe, .portfolio .loveposter{
+
     max-width: 1000px;
     margin: 0 auto;
 }
-.portfolio, .loveposter{
-    max-width: 1000px;
-    margin: 0 auto; 
-}
+
 
 .trp_main, .hbg_rich_main, .Lhd_main, .hbg_pop_main, .workers_main, .dc_main, .pf_main, .lvp_main{
    text-align: center;
